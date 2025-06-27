@@ -30,10 +30,11 @@ jobs:
     - name: Install dependencies
       run: npm install --legacy-peer-deps
       
+    - name: Update React Scripts
+      run: npm install react-scripts@5.0.1
+      
     - name: Build
-      run: |
-        export NODE_OPTIONS=--openssl-legacy-provider
-        npm run build
+      run: npm run build
       
     - name: Setup Pages
       uses: actions/configure-pages@v5
