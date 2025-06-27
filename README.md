@@ -10,3 +10,5 @@
 ```
 
 **A 64-step sequencer powered by Claude AI**
+
+[View on GitHub](https://github.com/shepsci/claude-sequencer)
