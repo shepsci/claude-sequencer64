@@ -2,7 +2,7 @@
   "name": "sequencer64",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shepsci.github.io/claude-sequencer64",
+  "homepage": "https://shepsci.github.io/shepsci-gemini-sequencer64",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.0",
     "@testing-library/jest-dom": "^5.11.9",
