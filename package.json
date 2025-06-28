@@ -23,7 +23,7 @@
     "redux-undo": "^1.0.1",
     "sass": "^1.89.2",
     "tone": "^15.2.6",
-    "web-vitals": "^0.2.4",
+    "web-vitals": "^5.0.3",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",
     "workbox-cacheable-response": "^5.1.4",
