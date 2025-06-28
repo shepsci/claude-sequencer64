@@ -33,6 +33,40 @@ export default function App() {
 const AppContent = () => {
   return (
     <>
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999,
+        color: 'white',
+        fontSize: '48px',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: '20px',
+        background: 'transparent',
+        pointerEvents: 'none',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 1fr)',
+        gap: '10px'
+      }}>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+        <span>CLAUDE</span>
+      </div>
       <Route path='/' exact render={() => <Redirect to={PATHS.BASE} />} />
       <Route path='/auth/success/:authToken' component={AuthSuccess} />
       <Route path={PATHS.BASE} exact component={SequencerPage} />
