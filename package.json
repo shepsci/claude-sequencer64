@@ -22,7 +22,7 @@
     "react-scripts": "4.0.3",
     "redux-undo": "^1.0.1",
     "sass": "^1.89.2",
-    "tone": "^14.8.9",
+    "tone": "^15.2.6",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
     "workbox-broadcast-update": "^5.1.4",
