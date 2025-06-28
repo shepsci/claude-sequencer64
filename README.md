@@ -9,6 +9,4 @@
    ╚═════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝
 ```
 
-**A 64-step sequencer powered by Claude AI**
-
 [Try it here](https://shepsci.github.io/claude-sequencer/)
