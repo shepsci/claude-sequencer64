@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import cuid from 'cuid';
+import { createId } from '@paralleldrive/cuid2';
 import { useTouchAndMouse } from 'hooks/useTouchAndMouse';
 
 export const Button = ({
@@ -32,7 +32,7 @@ export const Button = ({
     <button
       ref={ref}
       type={type || 'button'}
-      id={id || cuid.slug()}
+      id={id || createId()}
       className={'btn ' + classes + pressed}
       disabled={disabled}
       aria-label={ariaLabel}

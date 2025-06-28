@@ -1,4 +1,4 @@
-import cuid from 'cuid';
+import { createId } from '@paralleldrive/cuid2';
 import React, { useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { Button } from 'App/shared/Button';
@@ -20,7 +20,7 @@ export const ChangeKit = () => {
         <div id='changeKit' className='changeKit'>
           <div className='kits'>
             {grid.map((i) => {
-              return <KitSelection key={cuid.slug()} i={i} counterRef={counterRef} />;
+              return <KitSelection key={createId()} i={i} counterRef={counterRef} />;
             })}
           </div>
         </div>

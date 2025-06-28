@@ -1,4 +1,4 @@
-import cuid from 'cuid';
+import { createId } from '@paralleldrive/cuid2';
 import { useMemo } from 'react';
 
 export const DefaultSequence = ({ sequence, selectSequence, selectedId }) => {
@@ -8,7 +8,7 @@ export const DefaultSequence = ({ sequence, selectSequence, selectedId }) => {
     const handleSelect = (e) => selectSequence(e, _id);
     return (
       <div
-        key={cuid.slug()}
+        key={createId()}
         className={selected ? 'defaultSequence selected' : 'defaultSequence'}
         onClick={handleSelect}
       >

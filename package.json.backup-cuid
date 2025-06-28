@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://shepsci.github.io/claude-sequencer64",
   "dependencies": {
-    "@paralleldrive/cuid2": "^2.2.2",
     "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -12,6 +11,7 @@
     "audio-recorder-polyfill": "^0.4.1",
     "axios": "^1.10.0",
     "bson-objectid": "^2.0.4",
+    "cuid": "^2.1.8",
     "http-proxy-middleware": "^3.0.5",
     "idb-keyval": "^6.2.2",
     "postcss": "^8.5.6",

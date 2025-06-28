@@ -1,4 +1,4 @@
-import cuid from 'cuid';
+import { createId } from '@paralleldrive/cuid2';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { DefaultSequence } from './DefaultSequence';
@@ -28,7 +28,7 @@ const UserSequences = (props) => {
           <UserColumnTitles />
           {userSequences
             ?.map((sequence) => (
-              <UserSequence key={cuid.slug()} sequence={sequence} {...props} />
+              <UserSequence key={createId()} sequence={sequence} {...props} />
             ))
             .reverse()}
         </>
@@ -44,7 +44,7 @@ const DefaultSequences = (props) => {
       <p className='title'>Default Sequences</p>
       <DefaultColumnTitles />
       {defaultSequences.map((sequence) => (
-        <DefaultSequence key={cuid.slug()} sequence={sequence} {...props} />
+        <DefaultSequence key={createId()} sequence={sequence} {...props} />
       ))}
     </div>
   );
