@@ -38,17 +38,19 @@ const AppContent = () => {
         top: 0,
         left: 0,
         right: 0,
+        bottom: 0,
         zIndex: 9999,
         color: 'white',
         fontSize: '48px',
         fontWeight: 'bold',
         textAlign: 'center',
         padding: '20px',
-        background: 'transparent',
+        background: 'rgba(0,0,0,0.5)',
         pointerEvents: 'none',
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '10px'
+        gap: '10px',
+        textShadow: '2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black'
       }}>
         <span>CLAUDE</span>
         <span>CLAUDE</span>
