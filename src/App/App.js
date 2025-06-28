@@ -19,7 +19,7 @@ import { AuthSuccess } from './AuthSuccess';
 
 export default function App() {
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/claude-sequencer'>
       <ErrorBoundary>
         <Provider store={store}>
             <AppContent />
