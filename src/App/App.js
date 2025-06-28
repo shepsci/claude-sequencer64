@@ -35,6 +35,7 @@ const AppContent = () => {
     <>
       <Route path='/' exact render={() => <Redirect to={PATHS.BASE} />} />
       <Route path='/auth/success/:authToken' component={AuthSuccess} />
+      <Route path={PATHS.BASE} exact component={SequencerPage} />
       <Route path='/sequencer/:shared' component={SequencerPage} />
       <Route path={PATHS.CHANGE_KIT} component={ChangeKit} />
       <Route path={PATHS.GLOBAL_MIXER} component={MainMixer}/>
