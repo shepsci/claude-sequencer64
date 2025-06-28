@@ -1,0 +1,480 @@
+[2025-06-28T02:00:50.939Z] INFO: === React Scripts Upgrade Process Started ===
+[2025-06-28T02:00:50.940Z] INFO: Phase 1: Creating backup and testing baseline
+[2025-06-28T02:00:50.940Z] INFO: Creating package.json backup...
+[2025-06-28T02:00:50.942Z] SUCCESS: Backup created successfully
+[2025-06-28T02:00:50.942Z] INFO: Testing current build to establish baseline...
+[2025-06-28T02:00:50.942Z] INFO: Testing build process...
+[2025-06-28T02:00:51.732Z] ERROR: Build failed: Command failed: CI=false npm run build
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at runSyncOrAsync (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:130:11)
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:232:2)
+    at Array.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:205:4)
+    at Storage.finished (/Users/shepsci/claude-sequencer/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:55:16)
+    at /Users/shepsci/claude-sequencer/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:91:9
+/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js:19
+  throw err;
+  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:417:16)
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:452:10
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:323:13
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:367:11
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:233:18
+    at context.callback (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/shepsci/claude-sequencer/node_modules/babel-loader/lib/index.js:59:103 {
+  opensslErrorStack: [
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported'
+  ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:00:51.732Z] ERROR: Build stderr: Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at runSyncOrAsync (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:130:11)
+    at iterateNormalLoaders (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:232:2)
+    at Array.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:205:4)
+    at Storage.finished (/Users/shepsci/claude-sequencer/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:55:16)
+    at /Users/shepsci/claude-sequencer/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:91:9
+/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js:19
+  throw err;
+  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:417:16)
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:452:10
+    at /Users/shepsci/claude-sequencer/node_modules/webpack/lib/NormalModule.js:323:13
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:367:11
+    at /Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:233:18
+    at context.callback (/Users/shepsci/claude-sequencer/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/shepsci/claude-sequencer/node_modules/babel-loader/lib/index.js:59:103 {
+  opensslErrorStack: [
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported'
+  ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:00:51.732Z] ERROR: Build stdout: 
+> sequencer64@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+
+[2025-06-28T02:00:51.733Z] ERROR: Baseline build failed! Cannot proceed with upgrade.
+[2025-06-28T02:01:06.911Z] INFO: === React Scripts Upgrade Process Started ===
+[2025-06-28T02:01:06.912Z] INFO: Phase 1: Creating backup and testing baseline
+[2025-06-28T02:01:06.912Z] INFO: Creating package.json backup...
+[2025-06-28T02:01:06.912Z] SUCCESS: Backup created successfully
+[2025-06-28T02:01:06.912Z] INFO: Testing current build to establish baseline...
+[2025-06-28T02:01:06.913Z] INFO: Testing build process...
+[2025-06-28T02:01:15.270Z] ERROR: Build failed: Command failed: CI=false NODE_OPTIONS=--openssl-legacy-provider npm run build
+[2025-06-28T02:01:15.270Z] ERROR: Build stderr: No stderr
+[2025-06-28T02:01:15.270Z] ERROR: Build stdout: 
+> sequencer64@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Failed to compile.
+
+You must provide the URL of lib/mappings.wasm by calling SourceMapConsumer.initialize({ 'lib/mappings.wasm': ... }) before using SourceMapConsumer
+
+
+
+[2025-06-28T02:01:15.271Z] ERROR: Baseline build failed! Cannot proceed with upgrade.
+[2025-06-28T02:01:46.427Z] INFO: === React Scripts Upgrade Process Started ===
+[2025-06-28T02:01:46.428Z] INFO: === Starting React Scripts Upgrade Process ===
+[2025-06-28T02:01:46.428Z] INFO: Note: Skipping baseline test since current build has Node.js compatibility issues
+[2025-06-28T02:01:46.428Z] INFO: Upgrading React Scripts will fix these issues
+[2025-06-28T02:01:46.428Z] INFO: Creating package.json backup...
+[2025-06-28T02:01:46.429Z] SUCCESS: Backup created successfully
+[2025-06-28T02:01:46.429Z] INFO: Updating homepage URL for new repository name...
+[2025-06-28T02:01:46.429Z] SUCCESS: Homepage URL updated to claude-sequencer64
+[2025-06-28T02:01:46.429Z] INFO: Checking for compatibility issues...
+[2025-06-28T02:01:46.429Z] SUCCESS: Updated browserslist for compatibility
+[2025-06-28T02:01:46.430Z] INFO: 
+--- Attempting upgrade to React Scripts 5.0.1 - Major version with Webpack 5 ---
+[2025-06-28T02:01:46.430Z] INFO: Starting upgrade to React Scripts 5.0.1 - Major version with Webpack 5
+[2025-06-28T02:01:46.430Z] INFO: Installing react-scripts@5.0.1...
+[2025-06-28T02:02:01.109Z] SUCCESS: React Scripts 5.0.1 installed
+[2025-06-28T02:02:01.109Z] INFO: Testing build after upgrade...
+[2025-06-28T02:02:01.640Z] INFO: Build failed without legacy provider, trying with legacy provider...
+[2025-06-28T02:02:01.640Z] INFO: Testing build process...
+[2025-06-28T02:02:02.045Z] ERROR: Build failed: Command failed: CI=false NODE_OPTIONS=--openssl-legacy-provider npm run build
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:02:02.045Z] ERROR: Build stderr: node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:02:02.045Z] ERROR: Build stdout: 
+> sequencer64@0.1.0 build
+> react-scripts build
+
+
+[2025-06-28T02:02:02.045Z] ERROR: Build failed with react-scripts@5.0.1
+[2025-06-28T02:02:02.045Z] WARN: ❌ Upgrade to 5.0.1 failed, trying fallback...
+[2025-06-28T02:02:02.046Z] INFO: Restoring from backup...
+[2025-06-28T02:02:02.046Z] SUCCESS: Backup restored successfully
+[2025-06-28T02:02:02.046Z] INFO: Installing dependencies with legacy peer deps...
+[2025-06-28T02:02:08.057Z] SUCCESS: Dependencies installed successfully
+[2025-06-28T02:02:08.057Z] INFO: 
+--- Attempting upgrade to React Scripts 6.0.2 - Latest stable with React 18 support ---
+[2025-06-28T02:02:08.057Z] INFO: Starting upgrade to React Scripts 6.0.2 - Latest stable with React 18 support
+[2025-06-28T02:02:08.057Z] INFO: Installing react-scripts@6.0.2...
+[2025-06-28T02:02:08.610Z] ERROR: Upgrade to 6.0.2 failed: Command failed: npm install react-scripts@6.0.2 --legacy-peer-deps
+npm error code ETARGET
+npm error notarget No matching version found for react-scripts@6.0.2.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /Users/shepsci/.npm/_logs/2025-06-28T02_02_08_101Z-debug-0.log
+
+[2025-06-28T02:02:08.610Z] ERROR: Error details: npm error code ETARGET
+npm error notarget No matching version found for react-scripts@6.0.2.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /Users/shepsci/.npm/_logs/2025-06-28T02_02_08_101Z-debug-0.log
+
+[2025-06-28T02:02:08.610Z] WARN: ❌ Upgrade to 6.0.2 failed, trying fallback...
+[2025-06-28T02:02:08.610Z] INFO: Restoring from backup...
+[2025-06-28T02:02:08.611Z] SUCCESS: Backup restored successfully
+[2025-06-28T02:02:08.611Z] INFO: Installing dependencies with legacy peer deps...
+[2025-06-28T02:02:09.930Z] SUCCESS: Dependencies installed successfully
+[2025-06-28T02:02:09.930Z] ERROR: All upgrade attempts failed
+[2025-06-28T02:02:09.930Z] ERROR: 💥 Upgrade failed - restoring backup
+[2025-06-28T02:02:09.930Z] INFO: Restoring from backup...
+[2025-06-28T02:02:09.931Z] SUCCESS: Backup restored successfully
+[2025-06-28T02:04:49.806Z] INFO: === React Scripts Upgrade Process Started ===
+[2025-06-28T02:04:49.808Z] INFO: === Starting React Scripts Upgrade Process ===
+[2025-06-28T02:04:49.808Z] INFO: Note: Skipping baseline test since current build has Node.js compatibility issues
+[2025-06-28T02:04:49.808Z] INFO: Upgrading React Scripts will fix these issues
+[2025-06-28T02:04:49.808Z] INFO: Creating package.json backup...
+[2025-06-28T02:04:49.809Z] SUCCESS: Backup created successfully
+[2025-06-28T02:04:49.809Z] INFO: Updating homepage URL for new repository name...
+[2025-06-28T02:04:49.809Z] SUCCESS: Homepage URL updated to claude-sequencer64
+[2025-06-28T02:04:49.809Z] INFO: Checking for compatibility issues...
+[2025-06-28T02:04:49.809Z] SUCCESS: Updated browserslist for compatibility
+[2025-06-28T02:04:49.809Z] INFO: 
+--- Attempting upgrade to React Scripts 5.0.0 - Major version with Webpack 5 ---
+[2025-06-28T02:04:49.809Z] INFO: Starting upgrade to React Scripts 5.0.0 - Major version with Webpack 5
+[2025-06-28T02:04:49.809Z] INFO: Cleaning dependencies for fresh install...
+[2025-06-28T02:04:52.345Z] INFO: Installing react-scripts@5.0.0...
+[2025-06-28T02:05:05.057Z] INFO: Installing all dependencies...
+[2025-06-28T02:05:05.834Z] SUCCESS: React Scripts 5.0.0 installed
+[2025-06-28T02:05:05.834Z] INFO: Testing build after upgrade...
+[2025-06-28T02:05:06.480Z] INFO: Build failed without legacy provider, trying with legacy provider...
+[2025-06-28T02:05:06.481Z] INFO: Testing build process...
+[2025-06-28T02:05:06.860Z] ERROR: Build failed: Command failed: CI=false NODE_OPTIONS=--openssl-legacy-provider npm run build
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:05:06.860Z] ERROR: Build stderr: node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:05:06.860Z] ERROR: Build stdout: 
+> sequencer64@0.1.0 build
+> react-scripts build
+
+
+[2025-06-28T02:05:06.860Z] ERROR: Build failed with react-scripts@5.0.0
+[2025-06-28T02:05:06.860Z] WARN: ❌ Upgrade to 5.0.0 failed, trying fallback...
+[2025-06-28T02:05:06.860Z] INFO: Restoring from backup...
+[2025-06-28T02:05:06.861Z] SUCCESS: Backup restored successfully
+[2025-06-28T02:05:06.861Z] INFO: Installing dependencies with legacy peer deps...
+[2025-06-28T02:05:13.201Z] SUCCESS: Dependencies installed successfully
+[2025-06-28T02:05:13.201Z] INFO: 
+--- Attempting upgrade to React Scripts 5.0.1 - Latest stable in 5.x ---
+[2025-06-28T02:05:13.201Z] INFO: Starting upgrade to React Scripts 5.0.1 - Latest stable in 5.x
+[2025-06-28T02:05:13.201Z] INFO: Cleaning dependencies for fresh install...
+[2025-06-28T02:05:15.861Z] INFO: Installing react-scripts@5.0.1...
+[2025-06-28T02:05:21.804Z] INFO: Installing all dependencies...
+[2025-06-28T02:05:22.616Z] SUCCESS: React Scripts 5.0.1 installed
+[2025-06-28T02:05:22.616Z] INFO: Testing build after upgrade...
+[2025-06-28T02:05:23.269Z] INFO: Build failed without legacy provider, trying with legacy provider...
+[2025-06-28T02:05:23.269Z] INFO: Testing build process...
+[2025-06-28T02:05:23.643Z] ERROR: Build failed: Command failed: CI=false NODE_OPTIONS=--openssl-legacy-provider npm run build
+node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:05:23.643Z] ERROR: Build stderr: node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js
+- /Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js
+- /Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js
+- /Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/ajv-keywords/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/validate.js',
+    '/Users/shepsci/claude-sequencer/node_modules/schema-utils/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/terser-webpack-plugin/dist/index.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/config/webpack.config.js',
+    '/Users/shepsci/claude-sequencer/node_modules/react-scripts/scripts/build.js'
+  ]
+}
+
+Node.js v22.17.0
+
+[2025-06-28T02:05:23.643Z] ERROR: Build stdout: 
+> sequencer64@0.1.0 build
+> react-scripts build
+
+
+[2025-06-28T02:05:23.643Z] ERROR: Build failed with react-scripts@5.0.1
+[2025-06-28T02:05:23.643Z] WARN: ❌ Upgrade to 5.0.1 failed, trying fallback...
+[2025-06-28T02:05:23.643Z] INFO: Restoring from backup...
+[2025-06-28T02:05:23.644Z] SUCCESS: Backup restored successfully
+[2025-06-28T02:05:23.644Z] INFO: Installing dependencies with legacy peer deps...
+[2025-06-28T02:05:30.130Z] SUCCESS: Dependencies installed successfully
+[2025-06-28T02:05:30.130Z] ERROR: All upgrade attempts failed
+[2025-06-28T02:05:30.130Z] ERROR: 💥 Upgrade failed - restoring backup
+[2025-06-28T02:05:30.130Z] INFO: Restoring from backup...
+[2025-06-28T02:05:30.131Z] SUCCESS: Backup restored successfully
